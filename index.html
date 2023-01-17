@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="jquery.js"></script>
+    <title>Viktoria Engel | Frontend Developer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap');
+    </style>
+    <script src="app.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/viktoria-engel/" target="_blank"><img src="linkedin-logo-blau.png" class="social"></a>
+
+            <a href="https://github.com/vicky-engel" target="_blank"><img src="github-logo-blau.png" class="social"></a>
+
+        </div>
+        <nav class="nav-container">
+
+            <img src="burger.png" onclick="showNavbar()" class="burger" id="burger">
+            <ul class="navbar" id="navbar">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+
+
+    <div class="hero">
+        <div>
+            <h1>Viktoria Engel</h1>
+            <h2>Frontend Developer</h2>
+        </div>
+
+        <div>
+            <img src="heropic2.png" class="heropic">
+        </div>
+    </div>
+
+
+    <h2 id="about" class="about">About</h2>
+    <section>
+
+        <div><img src="profilbild.jpg" class="profilbild"></div>
+        <div>
+            <p>My name is Viktoria Engel and I'm a Frontend Developer with a passion for good UX and UI design. My next goals are to master JavaScript and learn React to make even more exciting Websites and ultimately become a Web Developer one day.
+            </p>
+        </div>
+
+    </section>
+
+    <div class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="grid-container">
+            <div><img src="html.svg" class="icon icon-card" alt="HTML5"></div>
+            <h3>HTML5</h3>
+            <div><img src="css-3.svg" class="icon icon-card" alt="CSS3"></div>
+            <h3>CSS3</h3>
+            <div><img src="js.svg" class="icon icon-card" alt="JavaScript"></div>
+            <h3>JavaScript</h3>
+            <div><img src="Git-Icon.svg" class="icon icon-card" alt="Git"></div>
+            <h3>Git</h3>
+            <div><img src="github.svg" class="icon icon-card" alt="Github"></div>
+            <h3>Github</h3>
+            <div><img src="VS-code.svg" class="icon icon-card" alt="Visual Studio Code"></div>
+            <h3>Visual Studio Code</h3>
+            <div><img src="figma.svg" class="icon icon-card" alt="Figma"></div>
+            <h3>Figma</h3>
+            <div><img src="adobe-XD.svg" class="icon icon-card" alt="Abode XD"></div>
+            <h3>Adobe XD</h3>
+            <div><img src="adobe-PS.svg" class="icon icon-card" alt="Adobe Photoshop"></div>
+            <h3>Adobe Photoshop</h3>
+            <div><img src="adobe-Il.svg" class="icon icon-card" alt="Adobe Illustrator"></div>
+            <h3>Adobe Illustrator</h3>
+        </div>
+    </div>
+
+
+
+    <div class="projects" id="projects">
+        <h2>Projects</h2>
+
+        <!--Projectcards-->
+        <div class="project-card">
+            <div class="inner-container">
+                <h4>Personal Portfolio Website</h4>
+                <h5>HTML CSS JAVASCRIPT</h5>
+                <p class="description">I built this Website to showcase my personal projects and share some information about me and my skills. It's fully responsive and designed by me.</p>
+                <div class="project-button-container">
+                    <form action="https:" method="get" target="_blank"></form>
+                    <button class="project-button" type="submit">DEMO</button>
+                    <form action="https" method="get" target="_blank"></form>
+                    <button class="project-button" type="submit">CODE</button>
+                </div>
+            </div>
+            <div><img src="screenshot portfolio.png" class="screenshot"></div>
+        </div>
+
+        <div class="project-card">
+            <div class="inner-container">
+                <h4>Company Landing Page</h4>
+                <h5>BOOTSTRAP SASS</h5>
+                <p class="description">A respoonsive Website for a fake company built with Bootstrap and SASS. Includes Google Maps functions.</p>
+                <div class="project-button-container">
+                    <form action="https:" method="get" target="_blank"></form>
+                    <button class="project-button" type="submit">DEMO</button>
+                    <form action="https" method="get" target="_blank"></form>
+                    <button class="project-button" type="submit">CODE</button>
+                </div>
+            </div>
+            <div><img src="screenshot portfolio.png" class="screenshot"></div>
+        </div>
+
+    </div>
+
+
+    <div class="contact" id="contact">
+        <h2>Contact</h2>
+        <input type="text" id="name" name="name" placeholder="Name" class="input">
+        <input type="email" id="email" name="email" placeholder="E-mail" class="input">
+        <textarea id="message" name="message" placeholder="Message" style="height:200px" class="input-message"></textarea>
+        <button class="contact-button" type="submit" onclick="sendEmail(); reset(); return false">Send</button>
+    </div>
+</body>
+
+
+</html>
